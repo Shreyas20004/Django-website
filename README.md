@@ -17,51 +17,39 @@ This is a Django project that includes user profile creation using Django signal
     cd Django-website
     ```
 
-2. Create a virtual environment:
-
-    ```sh
-    python -m venv venv
-    ```
-
-3. Activate the virtual environment:
+2. Activate the virtual environment:
 
     - On Windows:
 
         ```sh
-        venv\Scripts\activate
+        env\Scripts\activate
         ```
 
     - On macOS and Linux:
 
         ```sh
-        source venv/bin/activate
+        source env/bin/activate
         ```
 
-4. Install the required packages:
-
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-5. Apply migrations:
+3. Apply migrations:
 
     ```sh
     python manage.py migrate
     ```
 
-6. Create a superuser:
+4. Create a superuser:
 
     ```sh
     python manage.py createsuperuser
     ```
 
-7. Run the development server:
+5. Run the development server:
 
     ```sh
     python manage.py runserver
     ```
 
-8. Open your web browser and go to `http://127.0.0.1:8000/` to see the project in action.
+6. Open your web browser and go to `http://127.0.0.1:8000/` to see the project in action.
 
 ## Usage
 
