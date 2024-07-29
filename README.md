@@ -13,8 +13,8 @@ This is a Django project that includes user profile creation using Django signal
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/Shreyas20004/Django-website.git
+    cd Django-website
     ```
 
 2. Create a virtual environment:
