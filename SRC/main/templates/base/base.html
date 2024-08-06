@@ -10,10 +10,20 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!--custom css-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Automax</title>
+    {% block 'title'%}
+    <title>AutomaxYour Car Today</title>
+    {%endblock%}
 </head>
 
 <body>
+    {% if messages %}
+    {% for message in messages %}
+    <div {% if message.tags %} class="alert alert-{{message.tags}} "{% endif%}>
+        {{message}}
+       
+    </div>
+    {% endfor%}
+    {% endif%}
     {% block 'body'%}
     {%endblock%}
 </body>
