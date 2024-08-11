@@ -8,9 +8,9 @@
         <form action="" method="post">
             <img src="{% static 'images/logo.png' %}" alt="Logo"width="72"height="72">
             {% csrf_token %}
-            {{registerForm | crispy}}
+            {{register_form | crispy}}
             
-            <button class="w-100 btn btn-lg btn-danger"type="submit">Sign In</button>
+            <button class="w-100 btn btn-lg btn-danger"type="submit">Register</button>
             <p>Copyright © {% now 'Y'%} Shreyas Nair</p>
         </form>
     </main>

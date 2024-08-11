@@ -8,7 +8,7 @@
         <form action="" method="post">
             <img src="{% static 'images/logo.png' %}" alt="Logo"width="72"height="72">
             {% csrf_token %}
-            {{loginForm | crispy}}
+            {{login_form | crispy}}
             
             <button class="w-100 btn btn-lg btn-danger"type="submit">Sign In</button>
             <p>Copyright © {% now 'Y'%} Shreyas Nair</p>
