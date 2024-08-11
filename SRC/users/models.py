@@ -6,10 +6,10 @@ from .utils import user_directory
 
 class Location(models.Model):
     address1 =models.CharField(max_length=128,blank=True)
-    address_2=models.CharField(max_length=128, blank=True)
+    address2=models.CharField(max_length=128, blank=True)
     city = models.CharField(max_length=64)
     state = INStateField(default="MH")
-    zipcode = INZipCodeField(required=False)
+    zipCode = INZipCodeField(required=True)
     def __str__(self):
         return f'Location{self.id}' 
        
