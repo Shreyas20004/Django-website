@@ -9,7 +9,7 @@ class Location(models.Model):
     address2=models.CharField(max_length=128, blank=True)
     city = models.CharField(max_length=64)
     state = INStateField(default="MH")
-    zipCode = INZipCodeField(required=True)
+    zip_code = INZipCodeField(required=True)
     def __str__(self):
         return f'Location{self.id}' 
        
